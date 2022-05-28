@@ -227,6 +227,39 @@ button :hover {
     grid-area: 1 / 4 / auto / span 3 ;
 }
 
+
+@media (max-width:1200px){
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+         "a"
+         "b";
+        gap: 1rem;
+    }
+    .content-grid-a {
+        grid-area: 1 / 1 / auto / span 2 ;    
+    }
+    
+    .content-grid-b {
+        grid-area: 2 / 1 / auto / span 2 ;
+    }
+
+    .content-grid-b1 {
+        grid-area: 2 / 1 / auto / span 2 ;
+    }
+
+    .content-grid-a1{
+        grid-area: 1 / 1 / auto / span 2 ;
+        margin: 30px;
+        margin-top: 5em;
+        text-align: justify;
+        color:#bbb0b0;    
+    }  
+        
+    
+}
+
 @media (max-width:600px){
     .form{
         padding: 3.5em 1.5em;
